@@ -1,5 +1,6 @@
 package com.java.GestionVentas;
 
+import com.java.GestionVentas.view.ControllerLogin;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -26,6 +27,8 @@ public class GestionVentasApplication extends Application {
 		fxml.setControllerFactory(context::getBean);
 		Scene scene = new Scene(fxml.load());
 		stage.setTitle("LOGIN");
+		ControllerLogin controllerLogin =fxml.getController();
+		controllerLogin.setStage(stage);
 		stage.setScene(scene);
 		stage.show();
 

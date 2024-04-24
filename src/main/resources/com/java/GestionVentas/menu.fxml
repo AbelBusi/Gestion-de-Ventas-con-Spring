@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.java.GestionVentas.view.ControllerMenu"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="650.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java.GestionVentas.view.ControllerMenu">
+   <children>
+      <Pane layoutX="-2.0" layoutY="153.0" prefHeight="496.0" prefWidth="208.0" style="-fx-background-color: #343434;">
+         <children>
+            <Button fx:id="botonLogin" layoutX="16.0" layoutY="70.0" mnemonicParsing="false" onAction="#menuLogin" prefHeight="50.0" prefWidth="176.0" text="Regresar Login" />
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" prefHeight="153.0" prefWidth="208.0" style="-fx-background-color: #D8D8D6;" />
+      <Pane layoutX="206.0" prefHeight="153.0" prefWidth="1146.0" style="-fx-background-color: #381C47;" />
+   </children>
 </AnchorPane>
