@@ -22,7 +22,7 @@ public class GestionVentasApplication extends Application {
 	public void start(Stage stage) throws Exception {
 
 		context= SpringApplication.run(GestionVentasApplication.class);
-		FXMLLoader fxml = new FXMLLoader(getClass().getResource("/com/java/GestionVentas/main.fxml"));
+		FXMLLoader fxml = new FXMLLoader(getClass().getResource("/com/java/GestionVentas/login.fxml"));
 		fxml.setControllerFactory(context::getBean);
 		Scene scene = new Scene(fxml.load());
 		stage.setTitle("LOGIN");
